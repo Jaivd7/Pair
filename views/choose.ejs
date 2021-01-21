@@ -1,0 +1,104 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+  <div class="jumbotron">
+
+<form method="post" action="/updateProfile">
+
+  <div class="dropdown">
+    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Soccer
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+  <h5>  Soccer </h5> <br>
+                  <h>  MLS </h> <br>
+                              <input type="checkbox" name="sports" <% if(user.redBulls){ %> checked <%  } %>>NY Red Bulls<br>
+                                  <input type="checkbox" name="sports" <% if(user.dcUnited){ %> checked <%  } %>>D.C. United<br>
+                                    <input type="checkbox" name="sports" <% if(user.nycFc){ %> checked <%  } %>>NYC FC<br>
+                                      <input type="checkbox" name="sports" <% if(user.torontoFc){ %> checked <%  } %>>Toronto FC<br>
+                                      <input type="checkbox" name="sports" <% if(user.atlantaUnited){ %> checked <%  } %>>Alanta United<br>
+                  <br>  <h>Premiere League </h> <br>
+                  <input type="checkbox" name="sports" <% if(user.chelsea){ %> checked <%  } %>>Chelsea<br>
+                    <input type="checkbox" name="sports" <% if(user.manchesterUnited){ %> checked <%  } %>>Manchester United<br>
+                      <input type="checkbox" name="sports" <% if(user.manchesterCity){ %> checked <%  } %>>Manchester City<br>
+                        <input type="checkbox" name="sports" <% if(user.liverpool){ %> checked <%  } %>>Liverpool<br>
+                        <input type="checkbox" name="sports" <% if(user.arsneal){ %> checked <%  } %>>Arsenal<br>
+                        </div>
+                        </div>
+
+                        <div class="dropdown">
+                          <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Basketball
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <br>    <h5>  Basketball </h5> <br>
+
+                                                    <input type="checkbox" name="sports" <% if(user.lakers){ %> checked <%  } %>> Lakers<br>
+                                                        <input type="checkbox" name="sports" <% if(user.celtics){ %> checked <%  } %>>Celtics<br>
+                                                          <input type="checkbox" name="sports" <% if(user.warriors){ %> checked <%  } %>>Warriors<br>
+                                                            <input type="checkbox" name="sports" <% if(user.raptors){ %> checked <%  } %>>Raptors<br>
+                                                            <input type="checkbox" name="sports" <% if(user.heat){ %> checked <%  } %>>Heat<br>
+
+                                                            </div>
+                                                            </div>
+
+                                                            <div class="dropdown">
+                                                              <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                Football
+                                                              </button>
+                                                              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <br>  <h5>Football </h5> <br>
+                                        <input type="checkbox" name="sports" <% if(user.sf49ers){ %> checked <%  } %>>49ers<br>
+                                          <input type="checkbox" name="sports" <% if(user.patriots){ %> checked <%  } %>>Patriots<br>
+                                            <input type="checkbox" name="sports" <% if(user.eagles){ %> checked <%  } %>>Eagles<br>
+                                              <input type="checkbox" name="sports" <% if(user.giants){ %> checked <%  } %>>Giants<br>
+                                              <input type="checkbox" name="sports" <% if(user.jets){ %> checked <%  } %>>Jets<br>
+                                              </div>
+                                              </div>
+
+
+                                              <div class="dropdown">
+                                                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Baseball
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+
+                                              <br>  <h5>Baseball </h5> <br>
+                                              <input type="checkbox" name="sports" <% if(user.redsox){ %> checked <%  } %>>Red Sox<br>
+                                                <input type="checkbox" name="sports" <% if(user.yankees){ %> checked <%  } %>>Yankees<br>
+                                                  <input type="checkbox" name="sports" <% if(user.mets){ %> checked <%  } %>>Mets<br>
+                                                    <input type="checkbox" name="sports" <% if(user.pirates){ %> checked <%  } %>>Pirates<br>
+                                                    <input type="checkbox" name="sports" <% if(user.dodgers){ %> checked <%  } %>>Dodgers<br>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="dropdown">
+                                                      <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Hockey
+                                                      </button>
+                                                      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                        <h5>Baseball </h5> <br>
+                                                       <input type="checkbox" name="sports" <% if(user.redsox){ %> checked <%  } %>>Red Sox<br>
+                                                         <input type="checkbox" name="sports" <% if(user.yankees){ %> checked <%  } %>>Yankees<br>
+                                                           <input type="checkbox" name="sports" <% if(user.mets){ %> checked <%  } %>>Mets<br>
+                                                             <input type="checkbox" name="sports" <% if(user.pirates){ %> checked <%  } %>>Pirates<br>
+                                                             <input type="checkbox" name="sports" <% if(user.dodgers){ %> checked <%  } %>>Dodgers<br>
+                                                      </div>
+                                                    </div>
+
+
+
+
+
+
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+<%- include('bootfooter') -%>

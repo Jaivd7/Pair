@@ -1,0 +1,135 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Chat with YOUR pairs now!</h1>
+
+
+
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <% console.log(user.theyRequestedIDs.length)
+              if(user.theyRequestedIDs.length > 0) { %>
+                <h4>Requested You</h4>
+
+              <tr>
+                <th class="text-light" scope="col">#</th>
+                <th class="text-light" scope="col">Profile Pic</th>
+                <th class="text-light"scope="col">Request</th>
+                <th class="text-light"scope="col">Want to Chat?</th>
+              </tr>
+            </thead>
+            <% } %>
+
+              <tbody>
+        <%  for(var i = 0; i < users1.length; i++){  %>
+              <tr>
+                <td> <%= i + 1  %> </td>
+                <td>
+                  <% if( users1[i].profilePicURL == "" || users1[i].profilePicURL == null){ %>
+                    <img  class="table-pic" width="75px" height="75px" src="images/defaultPic.jpg">
+                  <% }
+                    else{ %>
+                    <img  class="table-pic" width="75px" height="75px" src="<%= users1[i].profilePicURL %>">
+                  <% } %>
+
+                </td>
+                <td> <label><%= users1[i].googlename %> has requested to chat. </label> </td>
+                <td class="centerButton">
+                  <a href="/acceptChat/<%= users1[i]._id %>" class="btn btn-success accept-or-deny" type="button" name="button">Accept</a>
+                  <a href="/declineChat/<%= users1[i]._id %>" class="btn btn-danger accept-or-deny" type="button" name="button">Decline</a>
+                </td>
+
+              </tr>
+              </tbody>
+          </table>
+        <% } %>
+
+
+        <table class="table table-bordered table-striped">
+          <thead class="thead-dark">
+            <%if(users2.length > 0) { %>
+              <h4>Your Requests</h4>
+
+            <tr>
+              <th class="text-light" scope="col">#</th>
+              <th class="text-light" scope="col">Profile Pic</th>
+              <th class="text-light"scope="col">Request</th>
+              <th class="text-light"scope="col">Want to Chat?</th>
+            </tr>
+
+          </thead>
+          <% } %>
+          <tbody>
+
+            <%  for(var i = 0; i < users2.length; i++){  %>
+              <tr>
+                <td> <%= i + 1  %> </td>
+                <td>
+                  <% if( users2[i].profilePicURL == "" || users2[i].profilePicURL == null){ %>
+                  <img  class="table-pic" width="75px" height="75px" src="images/defaultPic.jpg">
+                <% }
+                  else{ %>
+                  <img  class="table-pic" width="75px" height="75px" src="<%= users2[i].profilePicURL %>">
+                <% } %>
+               </td>
+                <td> <label>You requested to chat with <%= users2[i].googlename %></label> </td>
+                <td  class="centerButton"> <a href="/acceptChat/<%= users2[i]._id %>" class="btn btn-success accept-or-deny" type="button" name="button">Chat</a> </td>
+
+              </tr>
+          </tbody>
+        </table>
+        <% } %>
+
+        <table class="table table-bordered table-striped">
+          <thead class="thead-dark">
+            <h4>Your Chats</h4>
+              <tr>
+                <th class="text-light" scope="col">#</th>
+                <th class="text-light" scope="col">Profile Pic</th>
+                <th class="text-light"scope="col">Request</th>
+                <th class="text-light"scope="col">Want to Chat?</th>
+              </tr>
+
+          </thead>
+            <tbody>
+              <%  for(var i = 0; i < users3.length; i++){  %>
+                <tr>
+                  <td> <%= i + 1  %> </td>
+                  <td>
+                    <% if( users3[i].profilePicURL == "" || users3[i].profilePicURL == null){ %>
+                      <img  class="table-pic" width="75px" height="75px" src="images/defaultPic.jpg">
+                    <% }
+                      else{ %>
+                      <img  class="table-pic" width="75px" height="75px" src="<%= users3[i].profilePicURL %>">
+                    <% } %>
+                   </td>
+                  <td> <label> Chat with <%= users3[i].googlename %> </label> </td>
+                  <td  class="centerButton"> <a href="/showChat/<%= user._id %>/<%= users3[i]._id %>" class="btn btn-success accept-or-deny" type="button" name="button">Chat</a> </td>
+                </tr>
+                <% } %>
+
+                <%  for(var i = 0; i < users4.length; i++){  %>
+                <tr>
+                  <td> <%= i + 1  %> </td>
+                  <td>
+                    <% if( users4[i].profilePicURL == "" || users4[i].profilePicURL == null){ %>
+                      <img  class="table-pic" width="75px" height="75px" src="images/defaultPic.jpg">
+                    <% }
+                      else{ %>
+                      <img  class="table-pic" width="75px" height="75px" src="<%= users4[i].profilePicURL %>">
+                    <% } %>
+                  </td>
+                  <td> <label>Chat with <%= users4[i].googlename %></label> </td>
+                  <td  class="centerButton"><a class="button bg-success" href="/showChat/<%= users4[i]._id %>/<%= user._id %>" class="btn btn-success accept-or-deny" type="button" name="button">Chat</a> </td>
+
+                </tr>
+                  <% } %>
+
+
+            </tbody>
+          </table>
+
+          </div>
+
+<%- include('bootfooter') -%>
+<%- include('footer') -%>

@@ -1,0 +1,214 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height:100%;
+  position: relative;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* for self pic on the designer about me pages */
+img.about-me-pic{
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+img.table-pic{
+  border-radius: 30px;
+}
+
+h5.about-me-text{
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+div.about-me-pic-div{
+  flex-grow: .2;
+}
+
+h1.name-style{
+  text-shadow: 2px 2px 6px #a6c8ff;
+  text-align: center;
+}
+
+img.interest-style{
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px grey;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+button.accept-or-deny{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img.logo{
+  padding-right: 15px;
+}
+
+a.footerlink{
+  padding-left: 20px;
+  padding-right: 10px;
+  padding: 140px;
+  color: black;
+  font: 20px "Times New Roman", Times, serif;
+}
+
+a.copyrightlink{
+  padding-left: 100px;
+  padding-right: 0px;
+  padding: 10px;
+  color: black;
+}
+p.copyrighttext{
+  padding-left: 80px;
+  padding-right: 0px;
+  padding: 10px;
+  color: black;
+}
+p.center {
+  text-align: center;
+}
+
+
+
+div.footer-class{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  //background-color: #5DBCD2;
+}
+
+/* body{
+  background-color: rgba(0,0,0,1.00);
+} */
+
+img.interest-image{
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px grey;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+
+img.btn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px grey;
+  size: 2px
+}
+
+th#label{
+  text-align: center;
+}
+
+/*footer.page-footer {
+  position:absolute;
+  bottom:0;
+  width:98%;
+  height: 150px;
+} */
+
+img#profile-pic{
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/*div.footer-copyright{
+  text-align: center;
+  position: absolute;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+
+  body#bg{
+    background-color: #5DBCD2;
+  }
+}
+
+p#copyright{
+  vertical-align:text-bottom;
+}
+
+.footer {
+  position: relative;
+  background-color: #5DBCD2;
+  text-align: center;
+  top: 50px;
+  width: 100%;          /* Footer height */
+
+}
+
+
+button.dropdown-toggle{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px black;
+  size: 2px
+
+
+}
+a.meet-up{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px black;
+  size: 2px
+
+
+}
+
+th{
+
+  color: white;
+  font: 30px
+
+}
+
+td.centerButton{
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+a.styleButton{
+  /*
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 30px; */
+}
+
+.button {
+  margin-top: 16px;
+  padding: 10px 60px 10px 60px;
+  color: white;
+  border-radius: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+}

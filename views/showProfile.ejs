@@ -1,0 +1,19 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>Pair Profile </h1>
+        <%= profile.profilePicURL%>
+        <%= profile.age%>
+        <%= profile.address%>
+        <%= profile.bio%>
+        <hr>
+        <p> Welcome <%= profile.googlename %>
+            with email <%= profile.googleemail %>
+            You are logged in to Pair.<br>
+        </p>
+        <p> Last updated on <%= profile.lastUpdate %> </p>
+    </div>
+
+<%- include('footer') -%>
+<%- include('bootfooter') -%>
